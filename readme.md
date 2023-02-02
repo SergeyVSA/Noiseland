@@ -2,7 +2,7 @@
 
 Example of a UI/UX designer portfolio page.
 
-[Github pages](https://github.com/SergeyVSA/Portfolio_page)
+[Github pages](https://sergeyvsa.github.io/Noiseland/)
 
 ![screenshot](/img/screenshot.jpg)
 
