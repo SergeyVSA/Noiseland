@@ -6,10 +6,10 @@
 }
 html,
 body {
-  width: 1200px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1440px;
+margin: 0px auto;
+
+
 }
 .style_name {
   font-family: "Libre Franklin";
@@ -19,13 +19,13 @@ body {
   color: #999999;
   padding: 0px 0px 0px 0px;
 }
-.style_name_latestpost{
+.style_name_latestpost {
   font-family: "Libre Franklin";
   font-style: normal;
   font-size: 10px;
   line-height: 12px;
   color: #999999;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 120px;
 }
 
 .style_headline {
@@ -71,13 +71,15 @@ header {
   color: #000000;
 }
 .main_content {
-  width: 100%;
-  padding: 0px 50px 0px 50px;
+  max-width: 100%;
+  padding: 0px 120px 0px 120px;
   margin-left: auto;
   margin-right: auto;
   display: inline-grid;
   margin-top: 60px;
   grid-template-columns: 1fr auto 1fr;
+ 
+ 
 }
 .main_description {
   margin-left: 50px;
@@ -106,12 +108,11 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1vw;
   margin-top: 60px;
-  width: 100%;
-  padding: 0px 50px 0px 50px;
+  max-width: 100%;
+  padding: 0px 120px 0px 120px;
   border-bottom: 1px solid rgb(231, 227, 227);
   margin-bottom: 90px;
   font-family: "Tenor Sans";
-  font-style: normal;
 
   font-size: 20px;
   line-height: 24px;
@@ -125,7 +126,7 @@ header {
   grid-gap: 1vw;
   margin-top: 30px;
   width: 100%;
-  padding: 0px 50px 0px 50px;
+  padding: 0px 120px 0px 120px;
   margin-bottom: 40px;
   font-family: "Tenor Sans";
 
@@ -176,7 +177,7 @@ header {
   font-family: "Tenor Sans";
   font-style: normal;
   width: 100%;
-  padding: 0px 50px 0px 50px;
+  padding: 0px 120px 0px 120px;
   font-size: 19px;
   line-height: 24px;
   color: black;
@@ -201,6 +202,7 @@ header {
   line-height: 24px;
   color: #ffffff;
   text-decoration: none;
+  flex-wrap: wrap;
 }
 .footer_headline {
   display: flex;
@@ -213,18 +215,36 @@ header {
 }
 .categories {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-direction: row-reverse;
   align-items: flex-end;
+  gap: 15px;
+  white-space: nowrap;
+  margin-bottom: 70px;
+  margin-top: -25px;
+  flex-wrap: wrap;
+  line-height: 33px;
+  align-items: end;
+}
+.categories_style {
+  padding: 0px;
 }
 .contact {
-  display: grid;
-  grid-template-rows: 3fr 1fr 2fr;
-  grid-template-columns: 0.58fr 0.58fr 2fr;
-  align-items: center;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 156px;
+  white-space: nowrap;
+  line-height: 33px;
 }
-
+.contact_style {
+  display: flex;
+  flex-direction: column;
+}
+.contact_style_last {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 18px;
+}
 form.subscribe input {
   display: flex;
   justify-content: flex-end;
@@ -256,23 +276,19 @@ form.subscribe button {
 form.subscribe button:hover {
   background: #0b7dda;
 }
-.ftr {
-  display: grid;
-  grid-template-rows: 2fr 1fr;
-  grid-template-columns: 2fr 2fr 2fr 0fr;
 
-  white-space: nowrap;
-  text-decoration: none;
-  color: #ffffff;
-
-  margin-right: 100px;
-}
 .footer_style {
   font-family: "Libre Franklin";
   font-size: 10px;
   line-height: 12px;
   color: #666666;
   text-decoration: none;
+  margin-bottom: 20px;
+}
+.subscribe {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px 0px 10px;
 }
 a {
   text-decoration: none;
@@ -291,10 +307,11 @@ a:hover {
 h2 {
   font-family: "Libre Franklin";
 }
-.h2_header{
+.h2_header {
   font-family: "Libre Franklin";
   padding: 0px 0px 0px 12px;
 }
+
 
 img:hover {
   box-shadow: 1px 1px #999999, 2px 2px #999999, 3px 3px #999999, 4px 4px #999999,
@@ -308,7 +325,7 @@ img:hover {
   line-height: 12px;
   color: #999999;
   border-top: 1px solid #e6e6e6;
-  padding: 90px 0px 30px 50px;
+  padding: 90px 0px 30px 120px;
 }
 .btn_1 {
   color: #000000;
@@ -316,4 +333,158 @@ img:hover {
   text-decoration: none;
   border: 1px solid black;
   padding: 21px 36px 21px 36px;
+}
+img {
+ width: 100%;
+}
+.mobile_header {
+  display: flex;
+  justify-content: end;
+}
+.btn_mobile_menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn_mobile_style {
+  padding: 34px;
+  border: none;
+  background: none;
+  position: absolute;
+}
+.mobile_menu {
+  border: 2px solid rgb(165, 162, 162);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 15px 15px 15px 15px;
+  line-height: 50px;
+  font-size: 30px;
+  font-family: "Libre Franklin";
+  width: 200px;
+  position: absolute;
+  background-color: #ffffff;
+}
+.btn_close_style {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  padding: 2px 24px 0px 0px;
+}
+
+.btn_close_style:hover {
+  text-decoration: none;
+  font-size: 40px;
+}
+.btn_close {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+
+@media only screen and (min-width: 760px) {
+ 
+ 
+  
+
+  .btn_mobile_menu {
+    display: none;
+  }
+  .mobile_menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 761px) {
+  .nav_header {
+    display: none;
+  }
+  .main_content {
+  display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .main_description {
+    margin: 0px;
+  }
+
+  .contact_style_last {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .second_content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+  }
+  .third_content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+  }
+  .fourth_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  .a_style_underline {
+    text-align: start;
+  }
+  .categories_style {
+    padding: 0px;
+  }
+  .contact_style_last {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .categories {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: baseline;
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contact_style_last {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0px;
+  }
 }
